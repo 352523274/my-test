@@ -12,5 +12,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class Crm {
     public static void main(String[] args) {
         SpringApplication.run(Crm.class);
+        System.out.println("ssss");
     }
 }
