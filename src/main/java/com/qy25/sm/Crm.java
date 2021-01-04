@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@MapperScan("com.qy25.sm")
+@MapperScan("com.qy25.sm.mapper")
 public class Crm {
     public static void main(String[] args) {
         SpringApplication.run(Crm.class);

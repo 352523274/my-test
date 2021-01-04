@@ -64,7 +64,7 @@ public class BaseController<T,ID> {
      *批量删除
      */
     @DeleteMapping("deleteList")
-    public AxiosResult<Void> deleteByIds(@PathVariable List<ID> ids){
+    public AxiosResult<Void> deleteByIds(@RequestBody List<ID> ids){
         int i = baseService.batchDeleteEntity(ids);
         return getAxios(i);
     }
